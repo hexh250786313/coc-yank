@@ -24,7 +24,7 @@ export function readFile(fullpath: string, encoding = 'utf8'): Promise<string> {
 
 export function mkdirAsync(filepath: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    fs.mkdir(filepath, err => {
+    fs.mkdir(filepath, { recursive: true }, err => {
       if (err) return reject(err)
       resolve()
     })
