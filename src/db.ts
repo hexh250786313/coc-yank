@@ -106,7 +106,9 @@ export default class DB {
     let item = this.buildItem(content, filepath, regtype, filetype)
     let items = await this.load()
     let idx = items.findIndex(o => o.id == item.id)
-    if (idx != -1) return
+    if (idx != -1) {
+      items.splice(idx, 1)
+    }
     items.push(item)
     this.write(items)
   }
