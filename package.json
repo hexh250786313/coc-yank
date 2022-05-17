@@ -1,7 +1,7 @@
 {
   "name": "@hexuhua/coc-yank",
-  "version": "1.2.1-a",
-  "description": "A fork of @neoclide/coc-yank",
+  "version": "1.2.1-b",
+  "description": "A fork of neoclide/coc-yank",
   "main": "lib/index.js",
   "keywords": [
     "coc.nvim",
